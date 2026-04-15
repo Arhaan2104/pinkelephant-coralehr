@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>The Pink Elephant</title>
+  <rect width="64" height="64" rx="18" fill="#14514f" />
+  <path
+    d="M19 17h17.5c8 0 12.5 4.3 12.5 11 0 6.8-4.7 11.3-12.5 11.3H28v12H19V17Zm9 15.4h7.2c3.3 0 5-1.5 5-4.1 0-2.7-1.7-4.2-5-4.2H28v8.3Z"
+    fill="#fbf8f2"
+  />
+</svg>
