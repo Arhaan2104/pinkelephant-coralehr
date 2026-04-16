@@ -850,10 +850,14 @@ h3 {
 .footerNav a {
   color: var(--text-muted);
   font-size: 0.88rem;
+  text-decoration: underline;
+  text-decoration-color: rgba(20, 81, 79, 0.18);
+  text-underline-offset: 4px;
 }
 
 .footerNav a:hover {
   color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 .footerContact {
@@ -863,12 +867,16 @@ h3 {
 }
 
 .footerContact a {
-  color: var(--text-muted);
+  color: var(--accent);
   font-size: 0.88rem;
+  text-decoration: underline;
+  text-decoration-color: rgba(20, 81, 79, 0.35);
+  text-underline-offset: 4px;
 }
 
 .footerContact a:hover {
-  color: var(--accent);
+  color: var(--accent-light);
+  text-decoration-color: var(--accent);
 }
 
 .footerBottom {
