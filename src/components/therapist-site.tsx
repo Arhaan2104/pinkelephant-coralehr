@@ -230,16 +230,18 @@ export function TherapistSite({ data }: { data: TherapistSiteData }) {
           />
           <div className="aboutGrid">
             <article className="copyCard">
-              {data.therapist.bioStatus === "placeholder" && (
-                <span className="bioPlaceholderBadge">Bio coming soon</span>
+              {data.therapist.headshot.imageUrl && (
+                <img
+                  alt={data.therapist.headshot.alt}
+                  className="aboutPortrait"
+                  src={data.therapist.headshot.imageUrl}
+                />
               )}
-              <p>{data.therapist.bio}</p>
-              <dl className="quickFacts">
-                <DetailRow label="Location" value={data.therapist.location} />
-                <DetailRow label="Fee" value={data.therapist.sessionFee} />
-                <DetailRow label="Formats" value={data.therapist.sessionFormats.join(" & ")} />
-                <DetailRow label="Insurance" value={data.therapist.insurance} />
-              </dl>
+              {data.therapist.bioStatus === "placeholder" ? (
+                <p className="mutedText">Full biography coming soon. Reach out below to learn more about {data.therapist.practiceName}.</p>
+              ) : (
+                <p>{data.therapist.bio}</p>
+              )}
             </article>
             <aside className="infoCard">
               <h3>Credentials</h3>
@@ -251,7 +253,6 @@ export function TherapistSite({ data }: { data: TherapistSiteData }) {
               <p className="mutedText">Registration: {data.therapist.licenseNumber}</p>
               <dl className="stackedDetails" style={{ marginTop: "1.25rem" }}>
                 <DetailRow label="Languages" value={data.therapist.languages.join(", ")} />
-                <DetailRow label="Formats" value={data.therapist.sessionFormats.join(" & ")} />
               </dl>
             </aside>
           </div>
