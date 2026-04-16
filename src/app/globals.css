@@ -654,11 +654,9 @@ h3 {
   padding: 1.65rem;
 }
 
-/* Specialty cards with left accent border */
 .specialtyCard {
   display: flex;
   align-items: flex-start;
-  border-left: 3px solid var(--accent);
   min-height: 5.5rem;
   position: relative;
 }
@@ -679,10 +677,6 @@ h3 {
   border-color: var(--line-strong);
   transform: translateY(-3px);
   box-shadow: 0 12px 40px rgba(30, 36, 34, 0.08);
-}
-
-.specialtyCard:hover {
-  border-left-color: var(--accent-light);
 }
 
 /* Glass card variant */
