@@ -111,6 +111,7 @@ export function TherapistSite({ data }: { data: TherapistSiteData }) {
       <header className="siteHeader">
         <div className="shell navShell">
           <a className="wordmark" href="#hero">
+            <img src="/elephant-icon.png" alt="" className="wordmarkIcon" aria-hidden="true" />
             {data.therapist.practiceName}
           </a>
           <nav aria-label="Primary">
@@ -273,7 +274,10 @@ export function TherapistSite({ data }: { data: TherapistSiteData }) {
       <footer className="siteFooter">
         <div className="shell footerGrid">
           <div className="footerBrand">
-            <p className="footerPractice">{data.therapist.practiceName}</p>
+            <p className="footerPractice">
+              <img src="/elephant-icon.png" alt="" className="footerIcon" aria-hidden="true" />
+              {data.therapist.practiceName}
+            </p>
             <p className="mutedText">{data.therapist.fullName}</p>
             <p className="mutedText">{data.therapist.location}</p>
             <p className="mutedText">Sessions in {data.therapist.languages.join(" & ")}</p>
