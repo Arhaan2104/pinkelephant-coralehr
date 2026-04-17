@@ -122,9 +122,6 @@ export function TherapistSite({ data }: { data: TherapistSiteData }) {
                 <a href="#approach">How I Work</a>
               </li>
               <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
                 <a href="#contact">Contact</a>
               </li>
             </ul>
@@ -222,42 +219,6 @@ export function TherapistSite({ data }: { data: TherapistSiteData }) {
           </p>
         </section>
 
-        {/* ── About (absorbs practice details) ── */}
-        <section className="section shell aboutSection" id="about">
-          <SectionHeading
-            eyebrow="About"
-            title={`Meet ${firstName}`}
-          />
-          <div className="aboutGrid">
-            <article className="copyCard">
-              {data.therapist.headshot.imageUrl && (
-                <img
-                  alt={data.therapist.headshot.alt}
-                  className="aboutPortrait"
-                  src={data.therapist.headshot.imageUrl}
-                />
-              )}
-              {data.therapist.bioStatus === "placeholder" ? (
-                <p className="mutedText">Full biography coming soon. Reach out below to learn more about {data.therapist.practiceName}.</p>
-              ) : (
-                <p>{data.therapist.bio}</p>
-              )}
-            </article>
-            <aside className="infoCard">
-              <h3>Credentials</h3>
-              <ul className="simpleList">
-                {data.therapist.credentials.map((credential) => (
-                  <li key={credential}>{credential}</li>
-                ))}
-              </ul>
-              <p className="mutedText">Registration: {data.therapist.licenseNumber}</p>
-              <dl className="stackedDetails" style={{ marginTop: "1.25rem" }}>
-                <DetailRow label="Languages" value={data.therapist.languages.join(", ")} />
-              </dl>
-            </aside>
-          </div>
-        </section>
-
         {/* ── How to Get Started ── */}
         <section className="section shell sectionAccent" id="getting-started">
           <SectionHeading
@@ -322,7 +283,6 @@ export function TherapistSite({ data }: { data: TherapistSiteData }) {
             <ul>
               <li><a href="#specialties">Specialties</a></li>
               <li><a href="#approach">How I Work</a></li>
-              <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
