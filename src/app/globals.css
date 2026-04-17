@@ -459,18 +459,7 @@ h3 {
   object-position: center 38%;
 }
 
-.portraitCard::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3.5rem;
-  background: linear-gradient(180deg, var(--surface) 0%, transparent 100%);
-  z-index: 1;
-  pointer-events: none;
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-}
+/* gradient overlay removed — was washing out the top of the portrait */
 
 .portraitMeta {
   padding: 1.15rem 1.35rem 1.25rem;
