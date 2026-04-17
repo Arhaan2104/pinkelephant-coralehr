@@ -486,7 +486,7 @@ h3 {
 }
 
 .sectionAccent {
-  background: linear-gradient(180deg, var(--accent-soft) 0%, var(--background) 100%);
+  background: linear-gradient(180deg, var(--background) 0%, var(--accent-soft) 25%, var(--background) 100%);
   border-top: none !important;
 }
 
@@ -958,7 +958,7 @@ h3 {
   }
 
   .sectionAccent {
-    background: linear-gradient(180deg, var(--accent-soft) 0%, var(--background) 80%);
+    background: linear-gradient(180deg, var(--background) 0%, var(--accent-soft) 25%, var(--background) 100%);
   }
 }
 
